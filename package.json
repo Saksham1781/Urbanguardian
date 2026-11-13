@@ -1,0 +1,16 @@
+{
+  "name": "urban-guardians",
+  "version": "1.0.0",
+  "private": true,
+  "description": "AI-powered safety navigation platform",
+  "scripts": {
+    "dev:web": "cd apps/web && npm run dev",
+    "dev:backend": "cd services/backend && npm run dev",
+    "dev:ai": "cd services/ai-service && uvicorn app.main:app --reload --port 8000",
+    "install:all": "npm install && cd apps/web && npm install && cd ../../services/backend && npm install"
+  },
+  "devDependencies": {
+    "@playwright/test": "^1.59.1",
+    "playwright": "^1.59.1"
+  }
+}
